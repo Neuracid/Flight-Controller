@@ -44,10 +44,6 @@ ISR(TIMER1_COMPA_vect) //timer1 interrupt 5KHz
       digitalWrite(8, HIGH);     
     }   
   }
-  else if(cpt==5000){
-    cpt=0;
-    Serial.println("tic");
-  }
   else if(cpt%100==valeurTr){
     digitalWrite(8, LOW);
   }
